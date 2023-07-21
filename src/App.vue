@@ -2,19 +2,22 @@
   <Header />
   <Home />
   <About />
+  <Review />
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
+import Review from './components/Review.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Home, 
-    About
+    About,
+    Review
   }
 }
 </script>
