@@ -1,108 +1,106 @@
 <template>
-  <Header />
-  <Home />
-  <About />
-  <Review />
+    <Header />
+    <Home />
+    <About />
+    <Review />
+    <Contact />
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Home from './components/Home.vue'
-import About from './components/About.vue'
-import Review from './components/Review.vue'
+    import Header from './components/Header.vue'
+    import Home from './components/Home.vue'
+    import About from './components/About.vue'
+    import Review from './components/Review.vue'
+    import Contact from './components/Contact.vue'
 
 export default {
-  name: 'App',
-  components: {
-    Header,
-    Home, 
-    About,
-    Review
-  }
+    name: 'App',
+    components: {
+        Header,
+        Home, 
+        About,
+        Review,
+        Contact
+    }
 }
 </script>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-  :root{
-      --main-color:#d3ad7f;
-      --black:#13131a;
-      --bg:#010103;
-      --border:.1rem solid rgba(255,255,255,.3);
-  }
+    :root{
+        --main-color:#d3ad7f;
+        --black:#13131a;
+        --bg:#010103;
+        --border:.1rem solid rgba(255,255,255,.3);
+    }
 
-  *{
-      font-family: 'Roboto', sans-serif;
-      margin:0; padding:0;
-      box-sizing: border-box;
-      outline: none; border:none;
-      text-decoration: none;
-      text-transform: capitalize;
-      transition: .2s linear;
-  }
+    *{
+        font-family: 'Roboto', sans-serif;
+        margin:0; padding:0;
+        box-sizing: border-box;
+        outline: none; border:none;
+        text-decoration: none;
+        text-transform: capitalize;
+        transition: .2s linear;
+    }
 
-  html{
-      font-size: 62.5%;
-      overflow-x: hidden;
-      scroll-padding-top: 9rem;
-      scroll-behavior: smooth;
-  }
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-padding-top: 9rem;
+        scroll-behavior: smooth;
+    }
 
-  html::-webkit-scrollbar{
-      width: .8rem;
-  }
+    html::-webkit-scrollbar{
+        width: .8rem;
+    }
 
-  html::-webkit-scrollbar-track{
-      background: transparent;
-  }
+    html::-webkit-scrollbar-track{
+        background: transparent;
+    }
 
-  html::-webkit-scrollbar-thumb{
-      background: #fff;
-      border-radius: 5rem;
-  }
+    html::-webkit-scrollbar-thumb{
+        background: #fff;
+        border-radius: 5rem;
+    }
 
-  body{
-      background: var(--bg);
-  }
+    body{
+        background: var(--bg);
+    }
 
-  section{
-      padding:2rem 7%;
-  }
-
-
+    section{
+        padding:2rem 7%;
+    }
 
 
-  .heading{
+
+
+    .heading{
     text-align: center;
     color:#fff;
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
-  }
+    }
 
-  .heading span{
-      color:var(--main-color);
-      text-transform: uppercase;
-  }
+    .heading span{
+        color:var(--main-color);
+        text-transform: uppercase;
+    }
 
-  .btn{
-      margin-top: 1rem;
-      display: inline-block;
-      padding:.9rem 3rem;
-      font-size: 1.7rem;
-      color:#fff;
-      background: var(--main-color);
-      cursor: pointer;
-  }
+    .btn{
+        margin-top: 1rem;
+        display: inline-block;
+        padding:.9rem 3rem;
+        font-size: 1.7rem;
+        color:#fff;
+        background: var(--main-color);
+        cursor: pointer;
+    }
 
-  .btn:hover{
-      letter-spacing: .2rem;
-  }
+    .btn:hover{
+        letter-spacing: .2rem;
+    }
 
-
-
-
-
-  
 </style>
