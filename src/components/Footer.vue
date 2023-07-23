@@ -1,34 +1,13 @@
 <template>
     <section class="footer">
 
-<div class="share">
-    <!--
-    <a href="#" class="fab fa-facebook-f"></a>
-    <a href="#" class="fab fa-twitter"></a>
-    -->
-    
-    <a href="#" class="fab fa-instagram"></a>
-    <!--
-    <a href="#" class="fab fa-linkedin"></a>
-    <a href="#" class="fab fa-pinterest"></a>  
-    -->
-    
-</div>
+        <svg-icon type="mdi" :path="path" id="menu-btn" style="color: aqua;"></svg-icon>
 
 <div class="links">
     <a href="#">home</a>
     <a href="#">Sobre Nós</a>
-    <!--
-    <a href="#">menu</a>
-    <a href="#">products</a>
-    -->
-    
     <a href="#">Opiniões</a>
     <a href="#">Entre em contato</a>
-    <!--
-    <a href="#">blogs</a> 
-    -->
-    
 </div>
 
 <div class="credit">Criado por <span>Silvan Moura</span> | Todos os direitos reservados</div>
@@ -38,9 +17,20 @@
 </template>
   
 <script>
-  export default {
-    name: 'Contact'
-  }
+    import SvgIcon from '@jamescoyle/vue-icon'
+    import { mdiMenu } from '@mdi/js'
+    export default {
+        name: 'Footer',
+        components: {
+            SvgIcon
+        },
+
+        data() {
+            return {
+                path: mdiMenu,
+            }
+        }
+    }
 </script>
   
 <style scoped>

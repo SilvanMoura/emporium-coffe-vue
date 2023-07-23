@@ -13,17 +13,26 @@
         </nav>
 
         <div class="icons">
-            <div class="fas fa-bars" id="menu-btn"></div>
+            <svg-icon type="mdi" :path="path" id="menu-btn"></svg-icon>
         </div>
-
 
     </header>
 </template>
   
 <script>
-  export default {
-    name: 'Header'
-  }
+    import SvgIcon from '@jamescoyle/vue-icon';
+    import { mdiMenu } from '@mdi/js';
+    export default {
+        name: 'Header',
+        components: {
+            SvgIcon
+        },
+        data() {
+            return {
+                path: mdiMenu,
+            }
+        }
+    }
 </script>
   
 <style scoped>
@@ -59,18 +68,36 @@
         display: none;
     }
 
-    .header .icons div{
+    .header .icons svg-icon {
         color:#fff;
         cursor: pointer;
         font-size: 2.5rem;
         margin-left: 2rem;
+
     }
 
-    .header .icons div:hover{
+    .header .icons svg-icon:hover{
         color:var(--main-color);
     }
     #menu-btn{
         display: none;
+    }
+
+    @media (max-width:768px){
+
+        .header .icons{
+            display: inline-block;
+        }
+
+        #menu-btn{
+            display: inline-block;
+            color: #d3ad7f;
+        }
+        .header .navbar a{
+            margin:0 1rem;
+            font-size: 1.6rem;
+            color:#000;
+        }
     }
 </style>
   
