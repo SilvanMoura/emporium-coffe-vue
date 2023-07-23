@@ -4,6 +4,7 @@
     <About />
     <Review />
     <Contact />
+    <Footer />
 </template>
 
 <script>
@@ -12,6 +13,7 @@
     import About from './components/About.vue'
     import Review from './components/Review.vue'
     import Contact from './components/Contact.vue'
+    import Footer from './components/Footer.vue'
 
 export default {
     name: 'App',
@@ -20,7 +22,8 @@ export default {
         Home, 
         About,
         Review,
-        Contact
+        Contact,
+        Footer
     }
 }
 </script>
