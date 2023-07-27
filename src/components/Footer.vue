@@ -1,24 +1,28 @@
 <template>
     <section class="footer">
 
-        <svg-icon type="mdi" :path="path" id="menu-btn" style="color: aqua;"></svg-icon>
+        <div class="share">
+            <a href="#">
+                <svg-icon type="mdi" :path="path" style="width: 30px; height: 30px;"></svg-icon>
+            </a>
+        </div>
 
-<div class="links">
-    <a href="#">home</a>
-    <a href="#">Sobre Nós</a>
-    <a href="#">Opiniões</a>
-    <a href="#">Entre em contato</a>
-</div>
+        <div class="links">
+            <a href="#">home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Opiniões</a>
+            <a href="#">Entre em contato</a>
+        </div>
 
-<div class="credit">Criado por <span>Silvan Moura</span> | Todos os direitos reservados</div>
+        <div class="credit">Criado por <span>Silvan Moura</span> | Todos os direitos reservados</div>
 
-</section>
+    </section>
 
 </template>
   
 <script>
-    import SvgIcon from '@jamescoyle/vue-icon'
-    import { mdiMenu } from '@mdi/js'
+    import SvgIcon from '@jamescoyle/vue-icon';
+    import { mdiInstagram } from '@mdi/js';
     export default {
         name: 'Footer',
         components: {
@@ -27,7 +31,7 @@
 
         data() {
             return {
-                path: mdiMenu,
+                path: mdiInstagram,
             }
         }
     }
@@ -41,15 +45,16 @@
     }
 
     .footer .share{
-        padding:1rem 0;
+        padding: 1rem 0;
     }
 
     .footer .share a{
         height: 5rem;
         width: 5rem;
         line-height: 5rem;
-        font-size: 2rem;
+        font-size: 4rem;
         color:#fff;
+        padding: 0 10px;
         border:var(--border);
         margin:.3rem;
         border-radius: 50%;
